@@ -6,7 +6,7 @@
 					<div class="left">
 						<div class="content">
 							<div class="header">
-								<div class="logo text-center"><img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo_of_the_Ministry_of_Transportation_of_the_Republic_of_Indonesia.svg/1200px-Logo_of_the_Ministry_of_Transportation_of_the_Republic_of_Indonesia.svg.png" alt="Logo PAS" width="50"></div>
+								<div class="logo text-center"><img src="<?php echo base_url('assets/img/logomenhub.png');?>" alt="Logo PAS" width="50"></div>
 								<p class="lead">Login to your account</p>
 								<?php echo $this->session->flashdata('notif_login');?>
 							</div>

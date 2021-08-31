@@ -3,7 +3,7 @@
 		<!-- NAVBAR -->
 		<nav class="navbar navbar-default navbar-fixed-top">
 			<div class="brand">
-				<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8a/Logo_of_the_Ministry_of_Transportation_of_the_Republic_of_Indonesia.svg/1200px-Logo_of_the_Ministry_of_Transportation_of_the_Republic_of_Indonesia.svg.png" width="20px">
+				<img src="<?php echo base_url('assets/img/logomenhub.png');?>" width="20px">
 				<a href="#"><b>Arsip Kemenhub</b></a>
 				
 			</div>
@@ -17,8 +17,9 @@
 					<ul class="nav navbar-nav navbar-right">
 						
 						<li class="dropdown">
-							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user"></i> <?= $this->session->userdata('nama_pegawai'); ?> <i class="icon-submenu lnr lnr-chevron-down"></i></a>
 							<ul class="dropdown-menu">
+								<li><a href="#" class=""><i class="fa fa-user"></i><span><?= $this->session->userdata('nama_pegawai'); ?></span></a></li>
 								<li><a href="<?php echo site_url('admin/akun');?>" class=""><i class="lnr lnr-license"></i><span>Akun</span></a></li>
 								<li><a href="<?php echo base_url('login/signout');?>"><i class="lnr lnr-exit"></i> <span>Logout</span></a></li>
 							</ul>

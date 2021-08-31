@@ -7,8 +7,32 @@ class UserModel extends CI_Model {
     function first($query){
         return $this->db->get_where($this->table,$query);
     }
+
+	function get_pegawai($query){
+
+		$hasil = $query->result()[0]->id_pegawai;
+
+		$this->db->select('*');
+		$this->db->from('user');
+		$this->db->join('pegawai','pegawai.id_pegawai = user.id_pegawai');
+		$this->db->join('jabatan','jabatan.id_jabatan = pegawai.id_jabatan');
+		$this->db->where('pegawai.id_pegawai', $hasil);
+        
+		$pegawai = $this->db->get()->result();
+
+		foreach($pegawai as $row){
+            $createSession = array(
+                'nama_pegawai' => $row->nama_pegawai,
+				'jabatan' => $row->nama_jabatan
+            );
+        }
+
+		$this->session->set_userdata($createSession);
+
+	}
     
     function session($query){
+
         foreach($query->result() as $row){
             $createSession = array(
                 'id_user' => $row->id_user,

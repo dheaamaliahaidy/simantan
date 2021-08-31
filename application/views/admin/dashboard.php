@@ -6,7 +6,7 @@
 					<div class="panel panel-headline">
 						<div class="panel-heading">
 							<h3 class="panel-title">Dashboard</h3>
-							<p class="panel-subtitle">Selamat Datang Administrator</p>
+							<p class="panel-subtitle"><b>Welcome <?= $this->session->userdata('nama_pegawai'); ?> (<?= $this->session->userdata('jabatan'); ?>)</b></p>
 						</div>
 						<div class="panel-body">
 							<div class="row">

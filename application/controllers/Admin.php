@@ -52,9 +52,9 @@ class Admin extends CI_Controller {
     function akun(){
         $data = array(
             'set_pegawai' => $this->pegawai->join_pegawai_jabatan_unitkerja()->result(),
-            'set' => $this->pegawai->join_pegawai_user()->result()
-            
+            'set' => $this->pegawai->join_pegawai_user()->result() 
         );
+		
         $this->load->view('layouts/header');
         $this->load->view('layouts/nav');
         $this->load->view('admin/akun/kelola',$data);
