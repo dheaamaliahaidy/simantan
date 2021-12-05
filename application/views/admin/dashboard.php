@@ -11,81 +11,85 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="lnr lnr-envelope"></i></span>
-										<p>
-											<span class="number"><?php echo $set_internal_masuk;?></span>
-											<span class="title">Surat Internal Masuk</span>
-										</p>
-									</div>
+									<a href="<?php echo site_url('admin/surat-internal/masuk');?>">
+										<div class="card-counter primary">
+											<i class="fa fa-envelope"></i>
+											<span class="count-numbers"><?php echo $set_internal_masuk;?></span>
+											<span class="count-name">Surat Internal Masuk</span>
+										</div>
+									</a>
 								</div>
+
 								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="lnr lnr-envelope"></i></span>
-										<p>
-											<span class="number"><?php echo $set_internal_keluar;?></span>
-											<span class="title">Surat Internal Keluar</span>
-										</p>
-									</div>
+									<a href="<?php echo site_url('admin/surat-internal/keluar');?>">
+										<div class="card-counter danger">
+											<i class="fa fa-envelope-o"></i>
+											<span class="count-numbers"><?php echo $set_internal_keluar;?></span>
+											<span class="count-name">Surat Internal Keluar</span>
+										</div>
+									</a>
 								</div>
+
 								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="lnr lnr-envelope"></i></span>
-										<p>
-											<span class="number"><?php echo $set_eksternal_masuk;?></span>
-											<span class="title">Surat Eksternal Masuk</span>
-										</p>
-									</div>
+									<a href="<?php echo site_url('admin/surat-eksternal/masuk');?>">
+										<div class="card-counter primary">
+											<i class="fa fa-envelope"></i>
+											<span class="count-numbers"><?php echo $set_eksternal_masuk;?></span>
+											<span class="count-name">Surat Eksternal Masuk</span>
+										</div>
+									</a>
 								</div>
+
 								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="lnr lnr-envelope"></i></span>
-										<p>
-											<span class="number"><?php echo $set_eksternal_keluar;?></span>
-											<span class="title"> Surat Eksternal Keluar</span>
-										</p>
-									</div>
+									<a href="<?php echo site_url('admin/surat-eksternal/keluar');?>">
+										<div class="card-counter danger">
+											<i class="fa fa-envelope-o"></i>
+											<span class="count-numbers"><?php echo $set_eksternal_keluar;?></span>
+											<span class="count-name">Surat Eksternal Keluar</span>
+										</div>
+									</a>
 								</div>
 							</div>
-							<div class="row">
-							    <div class="col-md-3">
-							        <div class="metric">
-										<span class="icon"><i class="lnr lnr-user"></i></span>
-										<p>
-											<span class="number"><?php echo $set_akun;?></span>
-											<span class="title"> Akun Pengguna</span>
-										</p>
-									</div>
-							    </div>
-							    <div class="col-md-3">
-							        <div class="metric">
-										<span class="icon"><i class="lnr lnr-apartment"></i></span>
-										<p>
-											<span class="number"><?php echo $set_unit;?></span>
-											<span class="title"> Unit Kerja</span>
-										</p>
-									</div>
-							    </div>
-							    <div class="col-md-3">
-							        <div class="metric">
-										<span class="icon"><i class="lnr lnr-star"></i></span>
-										<p>
-											<span class="number"><?php echo $set_jabatan;?></span>
-											<span class="title"> Jabatan</span>
-										</p>
-									</div>
-							    </div>
-							    <div class="col-md-3">
-							        <div class="metric">
-										<span class="icon"><i class="lnr lnr-users"></i></span>
-										<p>
-											<span class="number"><?php echo $set_pegawai;?></span>
-											<span class="title"> Pegawai</span>
-										</p>
-									</div>
-							    </div>
+							<div class="row"> <!-- Baris ke-2 -->
+								<div class="col-md-3">
+									<a href="<?php echo site_url('admin/akun');?>"></a>
+								<div class="card-counter info">
+									<i class="fa fa-users"></i>
+									<span class="count-numbers"><?php echo $set_akun;?></span>
+									<span class="count-name">Akun Pengguna</span>
+								</div>
+								</div>
+
+								<div class="col-md-3">
+									<a href="<?php echo site_url('admin/unit-kerja');?>">
+										<div class="card-counter success">
+											<i class="fa fa-building"></i>
+											<span class="count-numbers"><?php echo $set_unit;?></span>
+											<span class="count-name">Unit Kerja</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-md-3">
+									<a href="<?php echo site_url('admin/jabatan');?>">
+										<div class="card-counter warning">
+											<i class="fa fa-star-o"></i>
+											<span class="count-numbers"><?php echo $set_jabatan;?></span>
+											<span class="count-name">Jabatan</span>
+										</div>
+									</a>
+								</div>
+
+								<div class="col-md-3">
+									<a href="<?php echo site_url('admin/pegawai');?>">
+										<div class="card-counter info">
+											<i class="fa fa-id-badge"></i>
+											<span class="count-numbers"><?php echo $set_pegawai;?></span>
+											<span class="count-name">Pegawai</span>
+										</div>
+									</a>
+								</div>
 							</div>
-							
 						</div>
 					</div>
 					
