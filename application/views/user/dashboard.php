@@ -11,40 +11,35 @@
 						<div class="panel-body">
 							<div class="row">
 								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="lnr lnr-envelope"></i></span>
-										<p>
-											<span class="number"><?php echo $set_internal_masuk;?></span>
-											<span class="title">Surat Internal Masuk</span>
-										</p>
-									</div>
+								<div class="card-counter primary">
+									<i class="fa fa-envelope"></i>
+									<span class="count-numbers"><?php echo $set_internal_masuk;?></span>
+									<span class="count-name">Surat Internal Masuk</span>
 								</div>
-								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="lnr lnr-envelope"></i></span>
-										<p>
-											<span class="number"><?php echo $set_internal_keluar;?></span>
-											<span class="title">Surat Internal Keluar</span>
-										</p>
-									</div>
 								</div>
+
 								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="lnr lnr-envelope"></i></span>
-										<p>
-											<span class="number"><?php echo $set_eksternal_masuk;?></span>
-											<span class="title">Surat Eksternal Masuk</span>
-										</p>
-									</div>
+								<div class="card-counter danger">
+									<i class="fa fa-envelope-o"></i>
+									<span class="count-numbers"><?php echo $set_internal_keluar;?></span>
+									<span class="count-name">Surat Internal Keluar</span>
 								</div>
+								</div>
+
 								<div class="col-md-3">
-									<div class="metric">
-										<span class="icon"><i class="lnr lnr-envelope"></i></span>
-										<p>
-											<span class="number"><?php echo $set_eksternal_keluar;?></span>
-											<span class="title"> Surat Eksternal Keluar</span>
-										</p>
-									</div>
+								<div class="card-counter primary">
+									<i class="fa fa-envelope"></i>
+									<span class="count-numbers"><?php echo $set_eksternal_masuk;?></span>
+									<span class="count-name">Surat Eksternal Masuk</span>
+								</div>
+								</div>
+
+								<div class="col-md-3">
+								<div class="card-counter danger">
+									<i class="fa fa-envelope-o"></i>
+									<span class="count-numbers"><?php echo $set_eksternal_keluar;?></span>
+									<span class="count-name">Pegawai</span>
+								</div>
 								</div>
 							</div>
 							
